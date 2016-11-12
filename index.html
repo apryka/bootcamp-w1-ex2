@@ -22,7 +22,83 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Witaj na Bootcampie!</p>
+        <main class="container">
+          <header>
+            <h1>Selektory</h1>
+          </header>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bg-info">wszystkie elementy div, posiadające zarówno klasę "grid" oraz klasę "grid-12"</div>
+            </div>
+            <div class="row">
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid grid-12"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bg-info">wszystkie elementy a, których atrybut "href" zaczyna się na "http", znajdujące się w elemencie o klasie "nav"</div>
+            </div>
+            <div class="row">
+              <nav>
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="404.html">404 page</a></li>
+                  <li><a href="http://eduweb.pl">Eduweb</a></li>
+                  <li><a href="https://jsonplaceholder.typicode.com/users">Users</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bg-info">wszystkie elementy input, których typ to "radio" lub "checkbox" oraz dodatkowo nie są aktualnie zaznaczone (checked). </div>
+            </div>
+            <div class="row">
+              <form action="">
+                <label for="radio1">Radio1</label>
+                <input type="radio" name="radio-group" value="radio1" checked="true"></input>
+                <label for="radio2">Radio2</label>
+                <input type="radio" name="radio-group" value="radio2"></input>
+                <label for="check1">Checkbox1</label>
+                <input type="checkbox" value="check1" checked="true"></input>
+                <label for="radio2">Checkbox2</label>
+                <input type="checkbox" value="check2"></input>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bg-info">wyłącznie pierwszy element p, który jest pusty (nie zawiera dzieci) oraz znajduje się w elemencie div z identyﬁkatorem "text" </div>
+            </div>
+            <div class="row" id="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat magnam hic dolorem nam officia ad atque perferendis harum nesciunt velit.</p>
+              <p></p>
+              <p>
+                <span></span>
+              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dignissimos architecto eos fuga voluptatem minus ex distinctio minima neque non.</p>
+              <p></p>
+            </div>
+            <div class="row">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis hic optio unde distinctio provident rerum sit quis sint quae!</p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bg-info">wszystkie elementy z klasą "pagination-item", które nie są elementem span</div>
+            </div>
+            <div class="row">
+              <div class="pagination-item"></div>
+              <span class="pagination-item"></span>
+              <p class="pagination-item"></p>
+            </div>
+          </div>
+
+        </main>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
